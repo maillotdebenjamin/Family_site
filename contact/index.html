@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="main.js"></script>
+        <title>Adopte Une Famille - Contact</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <a href="../accueil/index.html"><img src="../accueil/img/logo.png"class="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="../accueil/index.html">ACCUEIL</a></li>
+                        <li><a href="https://donner.croix-rouge.fr/urgence-ukraine/~mon-don">SOUTENIR L'UKRAINE <i data-emoji=🇺🇦></i></a></li>
+                        <li><a href="#">A PROPROS</a></li>
+                    </ul>
+                </nav>
+                <img src="img/menu.png"class="menu-icon">
+        </div>
+        <section class="image">
+            <h1 id="title">Contact</h1>
+            <h5 id="result">Vous avez des questions ?</h5>
+            <h5 id="*result_h5">N'hésitez pas à nous contacter si besoin: </h5>
+            <div class="container">
+                    <label for="femail">Votre email</label>
+                    <input type="text" id="email" name="email" placeholder="Votre email">
+                    <label for="fname">Prénom</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Prénom...">
+                    <label for="lname">Nom de famille</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Nom de famille...">
+                    <label for="Subject">Sujet</label>
+                    <select id="country" name="country">
+                        <option value="A propos des adoptions">A propos des adoptions.</option>
+                        <option value="Problème avec la famille d'accueil">Problème avec la famille d'accueil.</option>
+                        <option value="Demande de recrutement au sein de notre équipe">Demande de recrutement au sein de notre équipe.</option>
+                    </select>
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Placer votre message..." style="height:200px"></textarea>
+                    <input type="submit" value="Submit" onclick="sendEmail_faq();">
+            </div>
+        </section>
+    </body>
+</html>

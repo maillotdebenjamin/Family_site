@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/email-popup.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/email.js"></script>
+    <title>Adopte Une Famille - Adopte un enfant</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="../accueil/index.html"><img src="img/logo.png"class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="../accueil/index.html">ACCUEIL</a></li>
+                    <li><a href="https://donner.croix-rouge.fr/urgence-ukraine/~mon-don">DON POUR L'UKRAINE 🇺🇦 <i data-emoji=🇺🇦></i></a></li>
+                    <li><a href="#">A PROPOS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="desc">
+            <h1>Enfant</h1>
+            <p>
+                Voici la liste d'enfant placé en orphelinat ou<br>en famille d'accueil temporaire.<br><br>
+                Si vous êtes interessé par l'adoptions d'un des enfants,<br>
+                soumettez-nous un formulaire en cliquant sur l'enfant.
+            </p>
+        </div>
+        <div class="cards">
+            <div class="card card1" onclick="openForm()">
+                <div class="image__overlay">
+                    <div class="image__title">Marl<br>POMPELOPE</div>
+                    <p class="image__description">11 ans <br><br>Enfant turbulent.<br><br>Parents délaissés</p>
+                </div>
+            </div>
+            <div class="card card2" onclick="openForm()">
+                <div class="image__overlay">
+                    <div class="image__title">Tao<br>LAW-TSUNG</div>
+                    <p class="image__description">15 ans<br><br>Enfant calme, attentif<br><br>et autonome</p>
+                </div>
+            </div>
+            <div class="card card3" onclick="openForm()">
+                <div class="image__overlay">
+                    <div class="image__title">Sergio BERGER</div>
+                    <p class="image__description">5 ans<br><br>Parent décédés suite à un traffic<br><br>Affectif et bienveillant</p>
+                </div>
+            </div>
+            <div class="card card4" onclick="openForm()">
+                <div class="image__overlay">
+                    <div class="image__title">Ghuypp<br>OMMAREZ</div>
+                    <p class="image__description">13 ans<br><br>Peu de confiance en soi<br><br>Gentil et naif<br>A déja cotoyé plusieurs<br>familles sans succès</p>
+                </div>
+            </div>
+            <div class="card card5" onclick="openForm()">
+                <div class="image__overlay">
+                    <div class="image__title">Nydia RENOU</div>
+                    <p class="image__description">6 ans<br><br>Enfant traumatisé suite à<br>un trafic d'enfants et timide<br></p>
+                </div>
+            </div>
+            <div class="card card6" onclick="openForm()">
+                <div class="image__overlay">
+                    <div class="image__title">Said YASSIN</div>
+                    <p class="image__description">14 ans<br>Enfant voulant une famille<br>avec une connaissance<br>absolue</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login-popup">
+        <div class="form-popup" id="popupForm">
+            <form class="form-container">
+            <h2>FORMULAIRE:</h2>
+            <label for="NOM">
+                <strong>NOM</strong>
+            </label>
+            <input type="text" id="NOM" placeholder="Entrez votre NOM" name="NOM" required>
+            <label for="Prénom">
+                <strong>Prénom</strong>
+            </label>
+            <input type="text" id="Prénom" placeholder="Entrez votre Prénom" name="Prénom" required>
+            <label for="email">
+                <strong>E-mail</strong>
+            </label>
+            <input type="text" id="email" placeholder="Entrez votre Email" name="email" required />
+            <button type="button" class="btn" id="btn" onclick="sendEmail();">Valider</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

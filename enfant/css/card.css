@@ -1,0 +1,43 @@
+.cards {
+    margin-top: 5%;
+    height: 550px;
+    width: 850px;
+    display: inline-block;
+}
+
+.card {
+    width:250px;
+    height:250px;
+    display:inline-block;
+    border-radius:10px;
+    padding:15px 25px;
+    box-sizing:border-box;
+    cursor:pointer;
+    margin:10px 15px;
+    background-position:center;
+    background-size:cover;
+    transition: transform 0.5s;
+}
+
+.card1 {
+    background-image: url("../img/Marl_POMPELOPE.png");
+}
+.card2 {
+    background-image: url("../img/Tao_LAW-TSUNG-TSING.png");
+}
+.card3 {
+    background-image: url("../img/Sergio_BERGER.png");
+}
+.card4 {
+    background-image: url("../img/Ghuypp_OMMAREZ.png");
+}
+.card5 {
+    background-image: url("../img/Nydia_RENOU.png");
+}
+.card6 {
+    background-image: url("../img/Said_YASSIN.png");
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}

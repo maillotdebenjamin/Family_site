@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../accueil/img/famille.webp');
+    background-size: cover;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4,
+h5 {
+    font-size: 2.8rem;
+}
+
+li {
+    font-size: 2rem;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+#logo {
+    flex: 2 1 40rem;
+}
+
+#title {
+    color:#e3e4e3;
+    margin-top: -720px;
+}
+
+#result {
+    color: #85c997;
+}
+
+.image {
+    align-items:center;
+    text-align: center;
+    margin-top: 55%;
+    box-sizing:border-box;
+    display: flex;
+    color : #ffffff;
+    flex-direction: column;
+}
+
+label {
+    color: black;
+}
+
+#result_h5 {
+    color: black;
+    margin-left: -200px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.navbar{
+    height:12%;
+    display:flex;
+    align-items:center;
+}
+.logo{
+    width:200px;
+    cursor:pointer;
+}
+.menu-icon{
+    width:30px;
+    cursor:pointer;
+    margin-left:40px;
+}
+
+nav{
+    flex: 1;
+    text-align:right;
+}
+
+nav ul li{
+    list-style:none;
+    display:inline-block;
+    margin-left:60px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-size:13px;
+}

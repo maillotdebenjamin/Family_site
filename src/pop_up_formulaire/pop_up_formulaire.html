@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script type="text/javascript">
+      function sendEmail() {
+        var email = document.getElementById("email").value;
+        var name = document.getElementById("NOM").value;
+        var prenom = document.getElementById("Prénom").value
+        Email.send({
+          Host : "smtp.elasticemail.com",
+          Username : "adopte.unefamille@gmail.com",
+          Password : "9CE8E6A8FC92950B0523C6A569A88683CE51",
+          From : "adopte.unefamille@gmail.com",
+          To : email,
+          Subject : "Adopte une famille - Formulaire de contact",
+          Body :"Bonjour " + prenom + " !" + "<br>" + "<br>" + "Nous vous remercions d'avoir soumis un formulaire de contact sur notre site Adopte Une famille." + "<br>" + "Nous apprécions votre fort interêt pour ce projet. Nous traiterons votre demande dans les plus bref délai et vous renverrons un mail pour fixer un rendez-vous par la suite." + "<br>" + "N'hésitez pas à nous recontacter si vous avez de plus amples questions." + "<br>" + "<br>" + "Cordialement," + "<br>" + "L'Équipe d'Adopte une famille."
+      }).then(
+        message => alert(message)
+        );
+      }
+      </script>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+
+            <div class="row">
+            <div class="col">
+                <h1>Famille</h1>
+                <p>Lorem ipsum dolor sit amet,consectetur adipiscing
+                in tempor urna pretium.</p>
+            </div>
+            <div class="col">
+                <div class="card card1" onclick="openForm()">
+                    <h5>Wester desert</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+                <div class="card card2">
+                    <h5>Wester desert</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+                <div class="card card3">
+                    <h5>Wester desert</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+                <div class="card card4">
+                    <h5>Wester desert</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+                <div class="card card4">
+                    <h5>Wester desert</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+                <div class="card card4">
+                    <h5>Wester desert</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+            </div>
+    <!-- <div class="open-btn">
+      <button class="open-button" onclick="openForm()"> <img src="marlPOMPELOPE.jpg"></button>
+    </div> -->
+    <div class="login-popup">
+      <div class="form-popup" id="popupForm">
+        <form class="form-container">
+          <h2>FORMULAIRE:</h2>
+          <label for="NOM">
+            <strong>NOM</strong>
+          </label>
+          <input type="text" id="NOM" placeholder="Entrez votre NOM" name="NOM" required>
+          <label for="Prénom">
+            <strong>Prénom</strong>
+          </label>
+          <input type="text" id="Prénom" placeholder="Entrez votre Prénom" name="Prénom" required>
+          <label for="email">
+            <strong>E-mail</strong>
+          </label>
+          <input type="text" id="email" placeholder="Entrez votre Email" name="email" required />
+          <button type="button" class="btn" id="btn" onclick="sendEmail();">Valider</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function openForm() {
+        document.getElementById("popupForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("popupForm").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

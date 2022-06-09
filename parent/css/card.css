@@ -1,0 +1,43 @@
+.cards {
+    margin-top: 5%;
+    height: 550px;
+    width: 850px;
+    display: inline-block;
+}
+
+.card {
+    width:250px;
+    height:250px;
+    display:inline-block;
+    border-radius:10px;
+    padding:15px 25px;
+    box-sizing:border-box;
+    cursor:pointer;
+    margin:10px 15px;
+    background-position:center;
+    background-size:cover;
+    transition: transform 0.5s;
+}
+
+.card1 {
+    background-image: url("../img/BOUTHILLON.png");
+}
+.card2 {
+    background-image: url("../img/2.png");
+}
+.card3 {
+    background-image: url("../img/GOMEZ.png");
+}
+.card4 {
+    background-image: url("../img/3.png");
+}
+.card5 {
+    background-image: url("../img/HURLEY.png");
+}
+.card6 {
+    background-image: url("../img/7.png");
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
